@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-nv=zl+ft_!hczj^^a82_!u4=r_764chbupw0q(3=jl++xmg8^h
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "blogapplication-mhgt.onrender.com"
+    "blogapplication-mhgt.onrender.com",
+    "blog.mayulittleworld.com"
 ]
 
 
