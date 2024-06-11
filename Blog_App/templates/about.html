@@ -1,0 +1,31 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block content %}
+<!-- Images Section START -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center my-5">About</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images/about.jpg' %}" class="img-fluid" alt="About">
+        </div>
+        <div class="col-md-6">
+            <h2>Blog App</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Images Section END -->
+
+{% endblock %}

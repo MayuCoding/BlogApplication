@@ -1,0 +1,21 @@
+<!-- Extends from base.html -->
+{% extends 'includes/base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center my-5">Welcome to Blog App</h1>
+
+<h3>Blog Articles</h3>
+<hr>
+{% for article in articles %}
+    <div>
+        <h2><a href="{% url 'article_detail' article.slug %}">{{ article.title }}</a></h2>
+        <p>{{ article.snippet }}</p>
+        <p>{{ article.pub_date_time_pretty }}</p>
+    </div>
+{% endfor %}
+
+{% endblock %}
