@@ -11,7 +11,7 @@ class Article(models.Model):
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
     video = models.FileField(upload_to='videos/', null=True, verbose_name="", blank=True)
-    image = models.ImageField(upload_to='images/', null=True, verbose_name="")
+    image = models.ImageField(upload_to='img (imagegegegegeg)/', null=True, verbose_name="")
     thumb = models.ImageField(default='default.png', blank=True)
     
     def __str__(self):
